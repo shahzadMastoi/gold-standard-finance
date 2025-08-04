@@ -1,0 +1,26 @@
+<footer class="gh-footer{{#match @custom.header_and_footer_color "Accent color"}} has-accent-color{{/match}} gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px 0; font-size: 14px;">
+            <span class="gh-footer-logo is-title" style="display: flex; align-items: center; gap: 8px; font-size: 14px;">
+                {{#if @site.logo}}
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" style="height: 28px; width: auto;">
+                    <span data-footer-date="" style="font-size: 13px;">
+                        ©2025&nbsp;<a class="hover:underline nav-current" href="https://www.goldstandardfinance.com" style="color: inherit; text-decoration: none;">Gold Standard Finance</a>.
+                    </span>
+                {{else}}
+                    <span style="font-size: 13px;">{{@site.title}}</span>
+                {{/if}}
+            </span>
+
+            {{!-- <nav class="gh-footer-menu" style="font-size: 13px; margin-top: 10px;">
+                {{navigation type="secondary"}}
+            </nav> --}}
+
+            <div class="gh-footer-copyright" style="font-size: 13px; margin-top: 10px;">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Ghost</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
